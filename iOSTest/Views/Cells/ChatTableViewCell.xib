@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ChatTableViewCell" rowHeight="117" id="KGk-i7-Jjw" customClass="ChatTableViewCell" customModule="iOSTest" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="364" height="117"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="364" height="116.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="751" verticalHuggingPriority="751" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R4D-p6-QTk" customClass="UILabelPadding" customModule="iOSTest" customModuleProvider="target">
+                        <rect key="frame" x="72" y="85" width="268" height="18"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_chat" translatesAutoresizingMaskIntoConstraints="NO" id="IaZ-PZ-Hkq">
+                        <rect key="frame" x="8" y="8" width="64" height="64"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="64" id="7Ge-QL-5jC"/>
+                            <constraint firstAttribute="height" constant="64" id="f2h-iZ-BeQ"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NHn-U7-rWh">
+                        <rect key="frame" x="72" y="56" width="268" height="16"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
+                        <color key="textColor" red="0.10588235294117647" green="0.11764705882352941" blue="0.12156862745098039" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstItem="IaZ-PZ-Hkq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="0hT-Zj-LSg"/>
+                    <constraint firstItem="R4D-p6-QTk" firstAttribute="top" secondItem="NHn-U7-rWh" secondAttribute="bottom" constant="13" id="J7f-fw-NMj"/>
+                    <constraint firstItem="IaZ-PZ-Hkq" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="YlN-f2-xrC"/>
+                    <constraint firstItem="NHn-U7-rWh" firstAttribute="bottom" secondItem="IaZ-PZ-Hkq" secondAttribute="bottom" id="dYt-Ar-J9v"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="R4D-p6-QTk" secondAttribute="bottom" constant="3" id="g6Y-rJ-8Pp"/>
+                    <constraint firstItem="R4D-p6-QTk" firstAttribute="trailing" secondItem="NHn-U7-rWh" secondAttribute="trailing" id="hYK-Zq-vE5"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="NHn-U7-rWh" secondAttribute="trailing" constant="8" id="kAX-2O-0g8"/>
+                    <constraint firstItem="NHn-U7-rWh" firstAttribute="leading" secondItem="IaZ-PZ-Hkq" secondAttribute="trailing" id="kmF-Y4-OJs"/>
+                    <constraint firstItem="R4D-p6-QTk" firstAttribute="leading" secondItem="NHn-U7-rWh" secondAttribute="leading" id="x57-pR-Rys"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.97647058823529409" green="0.97647058823529409" blue="0.97647058823529409" alpha="1" colorSpace="calibratedRGB"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="body" destination="R4D-p6-QTk" id="LKm-6c-fqr"/>
+                <outlet property="header" destination="NHn-U7-rWh" id="gmc-dR-cCO"/>
+                <outlet property="messageLabel" destination="R4D-p6-QTk" id="4Ti-BG-23R"/>
+                <outlet property="userImageView" destination="IaZ-PZ-Hkq" id="kUe-Gj-jFw"/>
+            </connections>
+            <point key="canvasLocation" x="68" y="110.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_chat" width="24" height="24"/>
+    </resources>
+</document>
